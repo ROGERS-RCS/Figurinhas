@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Glassmorphism primitives */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 214, 0, 0.25);
+  box-shadow: 0 12px 40px -10px rgba(0, 200, 83, 0.15), 0 0 20px -5px rgba(255, 214, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.glass-card-special {
+  background: linear-gradient(135deg, rgba(255, 214, 0, 0.08) 0%, rgba(0, 200, 83, 0.04) 100%), rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 214, 0, 0.2);
+}
+
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #FFD600 0%, #00C853 100%);
+  color: #000000;
+  font-weight: 700;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -2px rgba(255, 214, 0, 0.35);
+}
+.btn-primary-gradient:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 24px 0 rgba(0, 200, 83, 0.45);
+  transform: translateY(-1px);
+}
+.btn-primary-gradient:active {
+  transform: translateY(1px);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}

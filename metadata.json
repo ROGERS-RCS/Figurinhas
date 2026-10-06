@@ -1,0 +1,6 @@
+{
+  "name": "FigurinhasBR - Marketplace de Figurinhas da Copa",
+  "description": "Marketplace moderno de compra, venda e leilão de figurinhas da Copa do Mundo com tecnologia glassmorphism e pregão em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
